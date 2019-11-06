@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administracion de rutas</title>
+</head>
+
+<body>
+    <center>
+    <section>
+        <h1>Agregar Ruta</h1>
+        <form>
+            <label>Código de estacion: </label>
+            <input id="codigo" type="number" value="1" >
+            <label>Nombre: </label>
+            <input id="nombre" type="text" value="san francisco">
+            <label>Hora salida: </label>
+            <input id="horaSalida" type="time">
+            <label>tiempo: </label>
+            <input id="Tiempo" type="number">
+            <label>Descripción: </label>
+            <input id="descripcion" type="text" value="san francisco a la albarrada">
+            <button id="agregar" type="button">Agregar</button>
+        </form>
+        <h1>Buscar Ruta</h1>
+        <form>
+            <label>Código de estacion: </label>
+            <input id="buscarCodigo" type="number">
+            <button id="buscar" type="button">Buscar</button>
+            <div id="tablaBuscar"></div>
+        </form>
+        <h1>Eliminar Ruta</h1>
+        <form>
+            <label>Código de estacion: </label>
+            <input id="eliminarCodigo" type="number">
+            <button id="eliminar" type="button">Eliminar</button>
+        </form>
+    </section>
+    <aside>
+        <h1>Tabla Almacen</h1>
+        <label>Código de estacion: </label>
+        <input id="Inicio" type="number">
+        <button id="selecionarInicio" type="button">Cambiar inicio</button>
+        <p>
+        <button id="vuelta" type="button">Dar vuelta</button>
+        </p>
+        <article id="tablaRutas"></article>
+    </aside>
+</center>
+</body>
+<script src="./rutas.js"></script>
+
+</html>
